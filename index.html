@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gerador de senhas</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1>Gerador de senhas</h1>
+      <p class="generated-password">Selecione as opções desejadas</p>
+
+        <div class="amount">
+          <label> Quantidade de caracteres
+            <input value="6" type="number" min="6" max="20" id="amount" />
+          
+        </div>
+
+        <div class="uppercase">
+          <label>Add maiúscula</label>
+          <input type="checkbox" id="uppercase" />
+        </div>
+
+        <div class="lowercase">
+          <label >Add minúsculas</label>
+          <input type="checkbox" id="lowercase" />
+        </div>
+
+        <div class="add-numbers">
+          <label >Add números</label>
+          <input type="checkbox" id="add-numbers" />
+        </div>
+
+        <div class="add-symbols">
+          <label >Add símbolos</label>
+          <input type="checkbox" id="add-symbols" />
+        </div>
+        <button class="generate">Gerar senha</button>
+
+    </section>
+    <script src="./assets/js/bundle.js"></script>
+  </body>
+</html>
